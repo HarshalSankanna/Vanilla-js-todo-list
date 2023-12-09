@@ -16,9 +16,11 @@ const addTask = () => {
   //to delete a task
   delBtn.addEventListener("click", () => {
     ul.removeChild(task);
+    input.focus();
   });
 
   input.focus();
 };
 
 button.addEventListener("click", addTask);
+input.focus();
